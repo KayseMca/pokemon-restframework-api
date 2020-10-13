@@ -98,12 +98,21 @@ DATABASES = {
     #     'PASSWORD':'0000',
     #     'PORT':'5432'
     # }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'mreiiawh',
+    #     'HOST':'ruby.db.elephantsql.com',
+    #     'USER':'mreiiawh',
+    #     'PASSWORD':'W-LJumIsBV3VKWiAuoaOKjYi-m0T5qLE',
+    #     'PORT':'5432'
+    # }
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mreiiawh',
-        'HOST':'ruby.db.elephantsql.com',
-        'USER':'mreiiawh',
-        'PASSWORD':'W-LJumIsBV3VKWiAuoaOKjYi-m0T5qLE',
+        'NAME': 'fahxzoazfkyfjy',
+        'HOST':'ec2-34-237-247-76.compute-1.amazonaws.com',
+        'USER':'fahxzoazfkyfjy',
+        'PASSWORD':'3397854a9f6b310f89f19d21a5cdbcc6a249406583a3a21f4023943fd21b693f',
         'PORT':'5432'
     }
 }

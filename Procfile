@@ -2,4 +2,4 @@
 
 release: python manage.py makemigrations --no-input
 release: python manage.py migrate --no-input
-web: gunicorn coreApp.wsgi
+web: gunicorn coreApp.wsgi:application --log-file -
