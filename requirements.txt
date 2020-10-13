@@ -33,7 +33,7 @@ filelock==3.0.12
 flake8==3.7.9
 geographiclib==1.50
 geopy==1.20.0
-# get==0.0.0
+get==0.0.0
 gunicorn==20.0.4
 httplib2==0.14.0
 idna==2.8
@@ -72,7 +72,7 @@ pandocfilters==1.4.2
 parso==0.5.1
 pickleshare==0.7.5
 Pillow==7.0.0
-# post==0.0.0
+post==0.0.0
 prometheus-client==0.7.1
 prompt-toolkit==2.0.10
 psycopg2==2.8.4
@@ -85,11 +85,12 @@ pylint-django==2.0.15
 pylint-plugin-utils==0.6
 pyodbc==4.0.27
 pyparsing==2.4.5
+pypiwin32==223
 pyrsistent==0.15.6
 PySocks==1.7.1
 python-dateutil==2.8.1
 pytz==2019.3
-# pywin32==225
+pywin32==225
 pywinpty==0.5.7
 pyzmq==18.1.1
 qtconsole==4.6.0
