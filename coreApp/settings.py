@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import heroku_django
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -89,12 +90,20 @@ WSGI_APPLICATION = 'coreApp.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'core',
+    #     'HOST':'localhost',
+    #     'USER':'postgres',
+    #     'PASSWORD':'0000',
+    #     'PORT':'5432'
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'core',
-        'HOST':'localhost',
-        'USER':'postgres',
-        'PASSWORD':'0000',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mreiiawh',
+        'HOST':'ruby.db.elephantsql.com',
+        'USER':'mreiiawh',
+        'PASSWORD':'W-LJumIsBV3VKWiAuoaOKjYi-m0T5qLE',
         'PORT':'5432'
     }
 }
@@ -140,3 +149,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     STATIC_DIR,
 ]
+
+django_heroku.settings(locals())
