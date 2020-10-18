@@ -26,9 +26,9 @@ SECRET_DIR = os.path.join(BASE_DIR, 'secret_key.txt')
 with open(SECRET_DIR) as f:
     SECRET_KEY = f.read().strip()
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['pokemon-rest-data.herokuapp.com']
+ALLOWED_HOSTS = ['angular-pokemon-c0acc.web.app', 'angular-pokemon-c0acc.firebaseapp.com', '159.89.0.144']
 
 
 
@@ -109,12 +109,12 @@ DATABASES = {
     # }
 
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fahxzoazfkyfjy',
-        'HOST':'ec2-34-237-247-76.compute-1.amazonaws.com',
-        'USER':'fahxzoazfkyfjy',
-        'PASSWORD':'3397854a9f6b310f89f19d21a5cdbcc6a249406583a3a21f4023943fd21b693f',
-        'PORT':'5432'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pokemon',
+        'HOST':'localhost',
+        'USER':'kayse',
+        'PASSWORD':'password',
+        'PORT':''
     }
 }
 
@@ -156,11 +156,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
+#STATICFILES_DIRS = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS =[
-    STATIC_DIR,
-]
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+
+#STATICFILES_DIRS =[
+ #   STATIC_DIR,
+#]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
