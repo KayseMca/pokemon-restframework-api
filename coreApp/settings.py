@@ -28,7 +28,7 @@ with open(SECRET_DIR) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['angular-pokemon-c0acc.web.app', 'angular-pokemon-c0acc.firebaseapp.com', '159.89.0.144']
+ALLOWED_HOSTS = ['angular-pokemon-c0acc.web.app', 'angular-pokemon-c0acc.firebaseapp.com', '159.89.0.144', 'pokemon-rest-data.herokuapp.com']
 
 
 
